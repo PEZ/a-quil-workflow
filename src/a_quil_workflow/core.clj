@@ -1,5 +1,6 @@
 (ns a-quil-workflow.core
   (:require [a-quil-workflow.drawing :as drawing]
+            [quil.applet :as qa]
             [quil.core :as q]
             [quil.middleware :as qm]))
 
@@ -17,10 +18,8 @@
   ; fun-mode.
   :middleware [qm/fun-mode])
 
-
-
 (comment
   (use 'a-quil-workflow.drawing :reload)
-  (quil.applet/with-applet a-quil-workflow.core/example (quil.core/random 10))
-  (quil.applet/with-applet a-quil-workflow.core/example (quil.core/no-loop))
-  (quil.applet/with-applet a-quil-workflow.core/example (quil.core/start-loop)))
+  (qa/with-applet a-quil-workflow.core/example (q/random 10))
+  (qa/with-applet a-quil-workflow.core/example (q/no-loop))
+  (qa/with-applet a-quil-workflow.core/example (q/start-loop)))

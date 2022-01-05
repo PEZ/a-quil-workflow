@@ -39,9 +39,6 @@
 
 (comment
   ;; Evaluate these using the custom commands shortcut `ctrl+space t`
-
   (q/current-fill)
-
-  (q/frame-rate 30)
-
+  (q/frame-rate 60)
   [(q/mouse-x) (q/mouse-y)])
