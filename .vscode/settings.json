@@ -1,0 +1,47 @@
+{
+  "calva.customREPLCommandSnippets": [
+    {
+      "key": "e",
+      "name": "Evaluate Current Form with Quil Applet",
+      "snippet": "(quil.applet/with-applet a-quil-workflow.core/example $current-form)"
+    },
+    {
+      "key": "c",
+      "name": "Call Current Form with Quil Applet",
+      "snippet": "(quil.applet/with-applet a-quil-workflow.core/example ($current-form))"
+    },
+    {
+      "key": "t",
+      "name": "Evaluate Current Top-level Form with Quil Applet",
+      "snippet": "(quil.applet/with-applet a-quil-workflow.core/example $top-level-form)"
+    },
+    {
+      "key": "n",
+      "name": "Stop Quil Loop",
+      "snippet": "(quil.applet/with-applet a-quil-workflow.core/example (quil.core/no-loop))"
+    },
+    {
+      "key": "s",
+      "name": "Start Quil Loop",
+      "snippet": "(quil.applet/with-applet a-quil-workflow.core/example (quil.core/start-loop))"
+    },
+    {
+      "key": "r",
+      "name": "Reload drawing namespace",
+      "snippet": "(use 'a-quil-workflow.drawing :reload)"
+    }
+  ],
+  "workbench.editorAssociations": {
+    "GITPOD_README.md": "vscode.markdown.preview.editor"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "calva.prettyPrintingOptions": {
+    "enabled": true,
+    "printEngine": "pprint",
+    "width": 40,
+    "maxLength": null
+  },
+  "markdown.preview.fontSize": 16,
+  "problems.decorations.enabled": false,
+}
