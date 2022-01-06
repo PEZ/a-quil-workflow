@@ -15,4 +15,4 @@ tasks:
   - name: Prepare deps
     init: clojure -P -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}'
   - name: Open README
-    command: open -g https://blog.agical.se/posts/calva-quil-workflow/
+    command: open -g README.md
